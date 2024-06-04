@@ -1,0 +1,111 @@
+import {
+    ProductVideo1,
+    ProductVideo2,
+    ProductVideo3,
+    ProductVideo4,
+    ProductVideo5,
+    ProductVideo6,
+    ProductVideo7,
+    ProductVideo8,
+    ProductVideo9,
+    ProductVideo10,
+    ProductVideo11,
+    ProductVideo12,
+    ProductVideo13,
+    ProductVideo14,
+    ProductVideo15,
+} from '../utils/video';
+
+export const videos = [
+    {
+        id: 1,
+        title: 'Video 1',
+        src: ProductVideo1,
+        poster: '/videos/video1-poster.jpg',
+    },
+    {
+        id: 2,
+        title: 'Video 2',
+        src: ProductVideo2,
+        poster: '/videos/video2-poster.jpg',
+    },
+    {
+        id: 3,
+        title: 'Video 3',
+        src: ProductVideo3,
+        poster: '/videos/video3-poster.jpg',
+    },
+    {
+        id: 4,
+        title: 'Video 4',
+        src: ProductVideo4,
+        poster: '/videos/video4-poster.jpg',
+    },
+    {
+        id: 5,
+        title: 'Video 5',
+        src: ProductVideo5,
+        poster: '/videos/video5-poster.jpg',
+    },
+    {
+        id: 6,
+        title: 'Video 6',
+        src: ProductVideo6,
+        poster: '/videos/video6-poster.jpg',
+    },
+    {
+        id: 7,
+        title: 'Video 7',
+        src: ProductVideo7,
+        poster: '/videos/video7-poster.jpg',
+    },
+    {
+        id: 8,
+        title: 'Video 8',
+        src: ProductVideo8,
+        poster: '/videos/video8-poster.jpg',
+    },
+    {
+        id: 9,
+        title: 'Video 9',
+        src: ProductVideo9,
+        poster: '/videos/video9-poster.jpg',
+    },
+    {
+        id: 10,
+        title: 'Video 10',
+        src: ProductVideo10,
+        poster: '/videos/video10-poster.jpg',
+    },
+    {
+        id: 11,
+        title: 'Video 11',
+        src: ProductVideo11,
+        poster: '/videos/video11-poster.jpg',
+    },
+    {
+        id: 12,
+        title: 'Video 12',
+        src: ProductVideo12,
+        poster: '/videos/video12-poster.jpg',
+    },
+    {
+        id: 13,
+        title: 'Video 13',
+        src: ProductVideo13,
+        poster: '/videos/video13-poster.jpg',
+    },
+    {
+        id: 14,
+        title: 'Video 14',
+        src: ProductVideo14,
+        poster: '/videos/video14-poster.jpg',
+    },
+    {
+        id: 15,
+        title: 'Video 15',
+        src: ProductVideo15,
+        poster: '/videos/video15-poster.jpg',
+    },
+    // Add more videos as needed
+];
