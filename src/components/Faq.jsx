@@ -56,7 +56,7 @@ const Faq = () => {
                 <div className="mt-8 text-center">
                     <h2 className="text-3xl font-bold">Don't see your question here? Drop us a line!</h2>
                     <p className="mt-4">Check out our FAQ or contact us below</p>
-                    <p className="mt-2"><a href="mailto:blue@unitedbyblue.com" className="text-blue-600">blue@unitedbyblue.com</a></p>
+                    <p className="mt-2"><a href="mailto:arvin@aimycomfort.com" className="text-blue-600">arvin@aimycomfort.com</a></p>
                     <p className="mt-2">Chat with us</p>
                     <p className="mt-2">Monday - Friday / 9am - 5pm EST</p>
                     <p className="mt-2">Saturday - Sunday / Closed</p>

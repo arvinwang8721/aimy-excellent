@@ -13,7 +13,7 @@ import {
   amazon,
 } from "../utils";
 
-export const navLists = ["Store", "About us", "Video Galleries", "Faq"];
+export const navLists = ["About us", "Video Galleries", "FAQ"];
 
 export const hightlightsSlides = [
   {

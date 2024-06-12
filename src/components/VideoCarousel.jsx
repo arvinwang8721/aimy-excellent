@@ -32,9 +32,9 @@ const VideoCarousel = () => {
     });
 
     // video animation to play the video when it is in the view
-    gsap.to("#video", {
+    gsap.to(videoRef.current[videoId], {
       scrollTrigger: {
-        trigger: "#video",
+        trigger: videoRef.current[videoId],
         toggleActions: "restart none none none",
       },
       onComplete: () => {
@@ -98,10 +98,12 @@ const VideoCarousel = () => {
 
       // update the progress bar
       const animUpdate = () => {
-        anim.progress(
-          videoRef.current[videoId].currentTime /
-          hightlightsSlides[videoId].videoDuration
-        );
+        if (videoRef.current[videoId]) {  // Guard clause to check if videoRef.current[videoId] is not null
+          anim.progress(
+            videoRef.current[videoId].currentTime /
+            hightlightsSlides[videoId].videoDuration
+          );
+        }
       };
 
       if (isPlaying) {
@@ -164,7 +166,6 @@ const VideoCarousel = () => {
                 <video
                   id="video"
                   playsInline={true}
-                  // className={`${list.id === 2 && "translate-x-44"} pointer-events-none`}
                   className="pointer-events-none"
                   preload="auto"
                   muted
@@ -181,11 +182,11 @@ const VideoCarousel = () => {
                 </video>
               </div>
 
-              <div className="absolute top-16 left-[5%] z-10">
+              <div className="absolute top-16 left-[5%] z-10 bg-black bg-opacity-50 p-3">
                 {list.textLists.map((text, i) => (
                   <p
                     key={i}
-                    className="md:text-2xl text-md font-medium bg-black bg-opacity-50 text-white px-2"
+                    className="md:text-2xl text-md font-medium text-white px-2"
                   >
                     {text}
                   </p>
@@ -221,8 +222,8 @@ const VideoCarousel = () => {
               isLastVideo
                 ? () => handleProcess("video-reset")
                 : !isPlaying
-                  ? () => handleProcess("play")
-                  : () => handleProcess("pause")
+                ? () => handleProcess("play")
+                : () => handleProcess("pause")
             }
           />
         </button>

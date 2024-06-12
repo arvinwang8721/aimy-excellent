@@ -1,13 +1,15 @@
-// src/components/Contact.jsx
+// src/pages/ContactUs.jsx
 import React from 'react';
+import ContactForm from '../components/ContactForm';
 
-const Contact = () => {
-    return (
-        <div>
-            <h1>Contact Page</h1>
-            <p>This is the Contact page.</p>
-        </div>
-    );
+const ContactUs = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="flex items-center justify-center py-12">
+        <ContactForm />
+      </div>
+    </div>
+  );
 };
 
-export default Contact;
+export default ContactUs;

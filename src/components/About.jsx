@@ -7,7 +7,7 @@ import Clients from './Clients';
 const About = () => {
     return (
         <>
-            <div className="py-15">
+            <div className="py-15 mb-10">
                 {aboutSections.map((section, index) => (
                     <div key={index} className={`flex flex-col md:flex-row ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
                         <img src={section.img} alt={section.title} className="w-full md:w-1/2 object-cover" />

@@ -19,9 +19,12 @@ const Navbar = () => {
         </Link>
 
         <div className="flex flex-1 justify-center max-sm:hidden">
+          <a href="https://store.aimycomfort.com" className="px-5 py-1 text-sm cursor-pointer text-gray-500 hover:text-black transition-all">
+            Store
+          </a>
           {navLists.map((nav, index) => (
             <Link key={index} to={`/${nav.toLowerCase().replace(/\s+/g, '-')}`} className="px-5 py-1 text-sm cursor-pointer text-gray-500 hover:text-black transition-all">
-              {nav}
+              {nav} 
             </Link>
           ))}
         </div>
